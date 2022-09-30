@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "pizza2view";
+}
+
+<div>
+<h1>Order Checkout Page !!!</h1>
+</div>
+
+<div>
+<table class="table table-hover table-warning">
+  <thead>
+    <tr>
+      <th scope="col">Order id</th>
+      <th scope="col">Pizza Name</th>
+      <th scope="col">Pizza Image</th>
+      <th scope="col">Category</th>
+      <th scope="col">Spicy</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light">
+      <th scope="row">2002</th>
+      <td>Deluxe Veggie</td>
+      <td><img src="https://www.dominos.co.in/files/items/Deluxe_Veggie.jpg" width="100%" alt="Pizza Name"></td>
+      <td>Veg Pizza</td>
+      <td>Medium</td>
+      <td>Rs. 385</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="d-flex justify-content-center">
+    <a class="btn btn-warning" onclick="    @("window.location.href='" + @Url.Action("orderconfirmed","home") + "'");" role="button" target="_blank"> Confirm Order </a>
+</div>
+
